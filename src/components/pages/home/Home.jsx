@@ -125,27 +125,3 @@ export default Home
 
 
 
-
-// <Stack>
-// <Text
-//       fontSize="52px"   
-//       textAlign="center"
-
-// >
-//      BOOKS
-// </Text>
-
-// <form style={{display : "flex", gap:"10px", justifyContent:"center", padding:"20px 0px"}} onSubmit={handleSubmit}>
-//   <Input width="80%" border="1px solid #333333" backgroundColor="#F5F5F5 "  value={value} onChange={(e) => setValue(e.target.value)} placeholder="Mariana Enriquez"  />
-//   <Button>Buscar</Button>
-// </form>
-// <Stack display="grid" 
-//       gridTemplateColumns="repeat(auto-fit,minmax(200px,1fr))" 
-//       gap="32px"   
-// >
-//     {books.map(book => (
-//         <Book key={book.id} book={book} />
-//     ))}
-        
-// </Stack>
-// </Stack>
