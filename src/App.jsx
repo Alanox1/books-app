@@ -1,5 +1,5 @@
 import { Box } from '@chakra-ui/react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './components/pages/home/Home'
 import BookDetail from './components/pages/bookDetail/BookDetail'
 import NotFoundPage from './components/pages/notFoundPage/NotFoundPage'
@@ -7,19 +7,38 @@ import NotFoundPage from './components/pages/notFoundPage/NotFoundPage'
 function App() {
 
 
-  return (
-     <BrowserRouter>
-       <Routes>
+  return( 
+    <HashRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
 
-         <Route path='/' element={<Home />}/>
-         
-         <Route path='/book/:bookId' element={<BookDetail/>}/>
+        <Route path='/book/:bookId' element={<BookDetail/>}/>
 
-         <Route path='*' element={<NotFoundPage />}/>
-         
-       </Routes>
-     </BrowserRouter>
+//      <Route path='*' element={<NotFoundPage />}/>
+
+      </Routes>
+    </HashRouter>
+  
   )
+    //  <BrowserRouter>
+    //    <Routes>
+
+    //      <Route path='/' element={<Home />}/>
+         
+    //      <Route path='/book/:bookId' element={<BookDetail/>}/>
+
+    //      <Route path='*' element={<NotFoundPage />}/>
+         
+    //    </Routes>
+    //  </BrowserRouter>
+  // )
 }
 
 export default App
+
+
+
+
+
+
+
